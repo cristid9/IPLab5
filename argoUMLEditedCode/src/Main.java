@@ -7,7 +7,12 @@ public class Main {
 
         sm.addMovie(m, 50, s, 20.5);
 
-        
+        Ticket t = sm.getTicket(m);
 
+        if (sm == SystemManager.getInstance()) {
+            System.out.println("e ok" );
+        } else {
+            System.out.println("nu e ok");
+        }
     }
 }
